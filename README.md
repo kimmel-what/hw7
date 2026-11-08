@@ -17,7 +17,6 @@ def checker(function):
 
     return wrapper
 
-
 @checker
 def calculate(expression):
     return eval(expression)
