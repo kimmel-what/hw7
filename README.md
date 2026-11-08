@@ -20,3 +20,12 @@ def checker(function):
 @checker
 def calculate(expression):
     return eval(expression)
+
+while True:
+    expression = input("Введіть математичний вираз: ")
+
+    if expression.lower() == "exit":
+        print("Калькулятор завершено.")
+        break
+
+    calculate(expression)
